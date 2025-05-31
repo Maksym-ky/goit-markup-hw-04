@@ -205,6 +205,11 @@ button {
 
 /* SECTION features */
 
+.icon-features {
+  fill: transparent;
+  stroke: #4d5ae5;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
