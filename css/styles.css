@@ -57,8 +57,8 @@ button {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -103,32 +103,31 @@ button {
   display: block;
   padding: 24px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: static; /* скинуто для базового */
+  text-decoration: none;
+  outline-offset: 2px;
 }
 
+.header-menu-link:hover,
 .header-menu-link:focus {
   color: #404bbf;
 }
 
-.header-menu-link:hover {
-  color: #404bbf;
-}
-
-.header-menu-focus {
+.header-menu-link.active-link {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-menu-focus::after {
+.header-menu-link.active-link::after {
   content: "";
-  position: absolute;
-  border-radius: 2px;
-  bottom: -1px;
-  left: 0;
   width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
   height: 4px;
   background-color: #404bbf;
+  border-radius: 2px;
   z-index: 1;
 }
 
@@ -142,21 +141,20 @@ button {
   margin-left: auto;
 }
 
-.header-address-link {
+.contact-link {
   font-weight: 400;
   padding: 24px 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  transition: color 25000ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline-offset: 2px;
 }
 
-.header-address-link:focus {
-  color: #404bbf;
-}
-
-.header-address-link:hover {
+.contact-link:hover,
+.contact-link:focus {
   color: #404bbf;
 }
 
@@ -495,9 +493,6 @@ button {
   flex-direction: column;
   min-width: 264px;
   margin-right: 0;
-}
-
-.logo-text-wrapper {
   margin-right: 120px;
 }
 
@@ -564,7 +559,8 @@ button {
   justify-content: center;
 }
 
-.icon-elips-footer:hover {
+.social-link:hover,
+.social-link:focus {
   background-color: #31d0aa;
 }
 
