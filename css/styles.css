@@ -172,7 +172,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office\ 1.jpg);
+    url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -214,6 +214,7 @@ button {
   align-content: center;
   margin-top: 48px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .hero-btn:focus {
@@ -242,7 +243,7 @@ button {
 }
 
 .icon-features {
-  display: flex;
+  display: block;
   width: 64px;
   height: 64px;
   margin: 0 auto;
