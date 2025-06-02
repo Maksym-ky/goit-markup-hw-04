@@ -487,6 +487,7 @@ button {
   border-top: none;
   width: 360px;
   height: 120px;
+  padding-left: 16px;
 }
 
 .portfolio-subtitle {
@@ -495,7 +496,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-left: 16px;
+  /* padding-left: 16px; */
 }
 
 .portfolio-item-text {
@@ -504,7 +505,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  padding-left: 16px;
+  /* padding-left: 16px; */
 }
 
 /* SECTION portfolio */
@@ -522,7 +523,6 @@ button {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
-  gap: 120px;
 }
 
 .footer-web-studio {
